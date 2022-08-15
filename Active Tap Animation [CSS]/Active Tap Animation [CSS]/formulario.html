@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+			* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Formulario</h2>
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+				<form>  
+                        <div>
+                        <label for="nome">Nome</label><br>
+                        */place holder aparece dentro do campo o que tem que ser digitado/*
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+                        <div>
+                        <label for="email">Email</Label><br>
+                        <input type="email" name="email" id="Email" >
+                    </div>   
+                        <div>
+                            <label for="mensagem">mensagem</label>
+                            <textarea name="Mensagem" id="mesangem" rows="5"></textarea>
+                        <div>
+                           */cria um botao para submeter o comando*/
+                            <input type="submit">
+                            /*cria icone de check box ticar*/
+                            <label>quais linguagens voce sabe?</label><br>
+                            <input type="radio" name="linguagens">html<br>
+                            <input type="radio" name="linguagens">CSS<br>
+                            <input type="radio" name="linguagens">Java<br>
+<div>
+
+    */ cria caixa de seleçao com select box (caixa de seleçao)*/
+    <label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Verde">Verde</option>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>
+</div>
+
+                        </div> 
+
+                        </div>
+                        </div>
+                        <div>
+
+                        </div>
+				</form>
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Anderson Santiago</p>
+		</footer>
+		
+	</body>
+</html>
