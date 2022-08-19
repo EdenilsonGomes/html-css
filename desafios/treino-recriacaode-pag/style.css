@@ -4,9 +4,6 @@
     font-family: 'motivasans';
     src: url(fonts/MotivaSansRegular.woff.ttf) format('truetype');
 }
-
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -14,18 +11,15 @@
 
 header {
     background-color: #171A21;
-    /* background-image:  url('imagens/logo_steam.svg' );
-    background-repeat: no-repeat; */
     height: 90px;
     min-height: 90px; 
+    color: #c6d4df;
 }
 
 div#conteudo {
     margin: auto;
     width: 950px;
     height: 90px;
-    /* max-width: 950px;
-    max-height: 120px; */
 }
 
 img {
@@ -43,16 +37,40 @@ div#logo {
 
 nav#menu {
     display: inline-block;
-   /* height: 90px; */
     margin-top: 35px;
     margin-bottom: 35px;
     
 }
 
-nav#menu > a {
+div.menu-itens {
     color: #c6d4df;
     text-decoration: none;
     font-family: 'motivasans',Arial, Helvetica, sans-serif;
+}
+
+div.interativo-loja  {
+    float: left;
+    width: 50px;
+    height: auto;   
+}
+
+div  a {
+    width: -10px;
+    color: #c6d4df;
+    text-decoration: none;
+}
+div > .navegacao > p {
+    display: none;
+    width: 300px;   
+}
+
+div:hover > .navegacao > p {
+    display: block;
+    color: #c6d4df;
+    background-color: #171A21;
+}
+div a:hover {
+    color: white; 
 }
 
 nav#configuracoes {
@@ -63,4 +81,3 @@ nav#configuracoes > a {
     color: white;
     font-family: 'motivasans',Arial, Helvetica, sans-serif;
 }
-
