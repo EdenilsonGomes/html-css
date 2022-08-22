@@ -35,49 +35,81 @@ div#logo {
     display: inline-block;
 }
 
-nav#menu {
+div#conteudo > ul {
+    list-style: none;
     display: inline-block;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    float: left;
+}
+
+.menu {
+    cursor: pointer;
+    float: left;
+    padding-right: 20px;
+    padding-top: 38px;
+    color: #b8b6b4;
     
 }
 
-div.menu-itens {
-    color: #c6d4df;
-    text-decoration: none;
-    font-family: 'motivasans',Arial, Helvetica, sans-serif;
-}
-
-div.interativo-loja  {
-    float: left;
-    width: 50px;
-    height: auto;   
-}
-
-div  a {
-    width: -10px;
-    color: #c6d4df;
-    text-decoration: none;
-}
-div > .navegacao > p {
-    display: none;
-    width: 300px;   
-}
-
-div:hover > .navegacao > p {
-    display: block;
-    color: #c6d4df;
-    background-color: #171A21;
-}
-div a:hover {
-    color: white; 
-}
-
-nav#configuracoes {
-    float: right;
-}
-
-nav#configuracoes > a {
+.menu:hover {
     color: white;
+}
+
+.menu > ul {
+    display: none;
+    position: fixed;
+    list-style: none;
+    background-color: #171A21;
     font-family: 'motivasans',Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.menu:hover > ul {
+    display: block;
+    
+}
+
+.config a {
+    float: right;
+    color: #b8b6b4;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#instale-o-steam a {
+    background-color: #5C7E10;
+    color: white;
+}
+
+#navegacao {
+    background-image: linear-gradient(to right,#4481b3, #194058);
+    margin: auto;
+    width: 950px;
+    height: 40px;
+    margin-top: 30px;   
+    
+}
+
+#navegacao nav {
+    text-align: center;
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: white;
+       
+}
+
+#navegacao nav:hover {
+    background-color: #316282;
+}
+
+#search {
+    float: right;
+    padding-top: 5px;
+}
+
+#pesquisa {
+    background-color: #316282;
+    border: 0px;
+    padding-top: 15px;
 }
