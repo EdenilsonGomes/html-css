@@ -25,6 +25,12 @@
 
 body {
     background-color: #1B2838;
+    background-image: url(imagens/background2.jpeg); 
+    background-repeat: none;
+    
+    
+    
+    
 }
 
 header {
@@ -38,6 +44,7 @@ header {
 main {
     width: 950px;
     margin: auto;
+     
 }
 
 div#conteudo {
@@ -138,4 +145,30 @@ div#conteudo > ul {
     background-color: #316282;
     border: 0px;
     padding-top: 15px;
+}
+
+div#conteudo-principal {
+    width: 950px;
+    height: 460px;
+    background-color: #171a215e;
+    color: white;
+}
+
+div#conteudo-principal p {
+    float: right;
+    width: 290px;
+    text-align: justify;
+}
+
+#conteudo-principal > #imagem {
+    float: left;
+    width: 650px;
+    height: 360px;
+    
+}
+
+#conteudo-principal > #imagem-2 {
+    float: right;
+    width: 290px;
+    height: 140px;
 }
