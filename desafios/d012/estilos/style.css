@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'passionone';
+    src: url('/desafios/d012/fontes/passion_one/passionone-regular.ttf') 
+    format('truetype');
+}
+@font-face {
+    font-family: 'sriracha';
+    src: url('/desafios/d012/fontes/sriracha/sriracha-regular.ttf') 
+    format('truetype');
+}
+
+
+
+/*@font-face {
+    font-family: 'android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}*/
+
+/* font-family: 'Passion One', cursive;
+font-family: 'Sriracha', cursive; */
+
+
+
+header {
+    background-color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+header > h1 {
+    font-family: 'passionone', Courier, monospace;
+    color: white;
+    font-size: 11em;
+    
+}
+
+header > p, a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+header > p {
+    padding-bottom: 30px;
+}
+
+body > p {
+    font-family: 'sriracha', Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 4em;
+    line-height: 2em;
+    
+    padding-top: 60px;
+    padding-left: 25px;
+}
+
+section.normal {
+    padding-top: 140px;
+    padding-left: 30px;
+    padding-bottom: 250px;
+    font-size: 4em;
+    font-family: 'sriracha', Helvetica, sans-serif;
+}
+
+section#p-junto {
+    padding-bottom: -0px;
+}
+
+section.imagem {
+    color: white;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 70px;
+    font-size: 4em;
+    font-family: 'sriracha', Helvetica, sans-serif;
+    background: black url(/desafios/d012/imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
+    
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 750px;
+}
+
+section.imagem2 {
+    color: white;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 70px;
+    font-size: 4em;
+    font-family: 'sriracha', Helvetica, sans-serif;
+    background: black url(/desafios/d012/imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+section.imagem2 > p {
+    background-color: rgba(0, 0, 0, 0.589);
+    width: 800px;
+}
+
+/*height: 100vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center center;
+            background-repeat: repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+            /* Shorthand - Background
+                color > image > position > repeat > [size] > attachment
+            
+            */
+
+         /*   background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /* size vai nao entra na shorthand */
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
