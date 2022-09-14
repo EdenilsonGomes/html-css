@@ -29,11 +29,14 @@ header {
     background-color: black;
     text-align: center;
     padding-top: 50px;
+    
 }
 header > h1 {
     font-family: 'passionone', Courier, monospace;
     color: white;
     font-size: 11em;
+    font-variant: small-caps ;
+   /* font-size: clamp(1.75em, 1em + 3vw, 11em);  CORRIGIR ISSO DEPOIS*/
     
 }
 
@@ -60,7 +63,8 @@ section.normal {
     padding-top: 140px;
     padding-left: 30px;
     padding-bottom: 250px;
-    font-size: 4em;
+    font-size: clamp(1.75em, 1em + 3vw, 4em);
+    
     font-family: 'sriracha', Helvetica, sans-serif;
 }
 
