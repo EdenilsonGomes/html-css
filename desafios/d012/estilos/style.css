@@ -68,11 +68,20 @@ section.normal {
     font-family: 'sriracha', Helvetica, sans-serif;
 }
 
-section.p-junto {
+/* section.p-junto {
     padding-top: 140px;
     padding-left: 30px;
     padding-bottom: 0px;
     font-size: 4em;
+    font-family: 'sriracha', Helvetica, sans-serif;padding-bottom: -0px;
+} */
+
+section.p-junto1 {
+    padding-top: 140px;
+    padding-left: 30px;
+    padding-bottom: 0px;
+    /* font-size: 4em; */
+    font-size: clamp(1.75em, 1em + 3vw, 4em);
     font-family: 'sriracha', Helvetica, sans-serif;padding-bottom: -0px;
 }
 
@@ -89,7 +98,8 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.589);
-    width: 750px;
+    /* width: 750px; */
+    max-width: 12em;
  }
 
 section.imagem2 {
@@ -97,7 +107,7 @@ section.imagem2 {
     padding-top: 70px;
     padding-left: 30px;
     padding-bottom: 70px;
-    font-size: 4em;
+    font-size: clamp(1.75em, 1em + 3vw, 4em); 
     font-family: 'sriracha', Helvetica, sans-serif;
     background: black url(/desafios/d012/imagens/background002.jpg) center center no-repeat fixed;
     background-size: cover;
@@ -105,7 +115,8 @@ section.imagem2 {
 
 section.imagem2 > p {
     background-color: rgba(0, 0, 0, 0.589);
-    width: 800px;
+    /* width: 800px; */
+    max-width: 12em;
 }
 
 /*height: 100vh;
