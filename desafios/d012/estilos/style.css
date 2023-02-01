@@ -16,14 +16,6 @@
     format('truetype');
 }
 
-/*@font-face {
-    font-family: 'android';
-    src: url('/fontes/idroid.otf') format('opentype');
-    font-weight: normal;
-}*/
-
-/* font-family: 'Passion One', cursive;
-font-family: 'Sriracha', cursive; */
 
 header {
     background-color: black;
@@ -34,8 +26,6 @@ header {
 header > h1 {
     font-family: 'passionone', Courier, monospace;
     color: white;
-    
-     /* font-size: 11em;  */
     font-variant: small-caps ;
     font-size: 10vw;
      
@@ -68,7 +58,6 @@ header > p {
 body > p {
     font-family: 'sriracha', Helvetica, sans-serif;
     text-align: justify;
-    /*font-size: 4em; */
     line-height: 2em;
     padding-top: 60px;
     padding-left: 25px;
@@ -79,23 +68,13 @@ section.normal {
     padding-left: 30px;
     padding-bottom: 250px;
     font-size: clamp(1.75em, 1em + 3vw, 4em);
-    
     font-family: 'sriracha', Helvetica, sans-serif;
 }
-
-/* section.p-junto {
-    padding-top: 140px;
-    padding-left: 30px;
-    padding-bottom: 0px;
-    font-size: 4em;
-    font-family: 'sriracha', Helvetica, sans-serif;padding-bottom: -0px;
-} */
 
 section.p-junto1 {
     padding-top: 140px;
     padding-left: 30px;
     padding-bottom: 0px;
-    /* font-size: 4em; */
     font-size: clamp(1.75em, 1em + 3vw, 4em);
     font-family: 'sriracha', Helvetica, sans-serif;padding-bottom: -0px;
 }
@@ -113,7 +92,6 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.589);
-    /* width: 750px; */
     max-width: 12em;
  }
 
@@ -130,24 +108,9 @@ section.imagem2 {
 
 section.imagem2 > p {
     background-color: rgba(0, 0, 0, 0.589);
-    /* width: 800px; */
     max-width: 12em;
 }
 
-/*height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: repeat;
-            background-size: cover;
-            background-attachment: fixed; */
-            /* Shorthand - Background
-                color > image > position > repeat > [size] > attachment
-            
-            */
-
-         /*   background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
-            background-size: cover; /* size vai nao entra na shorthand */
 footer {
     background-color: black;
     color: white;
