@@ -1,83 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Meu Blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-
-  <style>
-    body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-main {
-  padding: 20px;
-}
-
-#postContainer {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 10px #ccc;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 1- Configiuração de media query-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query</title>
+  <link rel="stylesheet" href="estilo/styles.css">
+</head>
+<body>
 
 
-
-  </style>
-  <body>
-
-    <script> const postContainer = document.querySelector("#postContainer");
-
-        const createPost = (title, content) => {
-          const post = document.createElement("div");
-          post.innerHTML = `
-            <h2>${title}</h2>
-            <p>${content}</p>
-          `;
-          postContainer.appendChild(post);
-        };
-        
-        const handlePublish = () => {
-          const title = prompt("Digite o título do post");
-          const content = prompt("Digite o conteúdo do post");
-          if (title && content) {
-            createPost(title, content);
-          }
-        };
-        
-        if (confirm("Você é o administrador?")) {
-          handlePublish();
-        }
-        </script>
-
-    <header>
-      <h1>Meu Blog</h1>
-    </header>
-    <main>
-      <div id="postContainer">
-      </div>
-    </main>
-    <footer>
-      <p>Todos os direitos reservados</p>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+    <div id="bloco-1">
+      <p>Olá, meu nome é Edenilson.</p>
+      <p>Desenvolvedor Front-End</p>
+      <p>Que tal conhecer um pouco do <br> meu trabalho?</p>
+  </div>
+</body>
 </html>
